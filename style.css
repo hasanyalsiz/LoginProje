@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: pink;
+
+    background: url(5.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box{
+    position: relative;
+    width: 450px;
+    height: 550px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    margin-left: 15%;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+    
+}
+
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 px 0 5px;
+    color: #fff;
+    
+
+}
+
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.forget label input{
+    margin-right: 3px;
+}
+
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+   
+}
+
+.forget label a:hover{
+    text-decoration: underline;
+    transition: 0.2s;
+    color: rgb(235, 250, 250);
+}
+
+button{
+    width: 80%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight:600;
+    margin-left: 10%;
+}
+
+button:hover{
+  background-color: #f40d30;
+  color: white;
+  transition: 0.3s;
+}
+
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a{
+
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+
+}
+
+.register p a:hover{
+    text-decoration: underline;
+    color: rgb(235, 250, 250);
+
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 1rem;
+
+  }
+  
+  .wrapper ul {
+    list-style: none;
+  }
+
+  .wrapper ul li {
+    width: 75px;
+    height: 75px;
+    line-height: 75%;
+    margin: 0 15px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid #D8E2DC;
+    float: left;
+    transition: all 0.5s ease;
+    
+  }
+  
+
+  .wrapper ul li .fa {
+    color: #D8E2DC;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+  }
+  
+
+  .wrapper ul li:hover.facebook {
+    border: 5px solid #336ae0;
+    box-shadow: 0 0 15px #adc0e9;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-facebook {
+    color: #abb8d3;
+    text-shadow: 0 0 15px #c9d8f7;
+    transition: all 0.5s ease;
+  }
+  
+  /*twitter*/
+  .wrapper ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+  
+  /* instagram */
+  .wrapper ul li:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  
+  /* google */
+  .wrapper ul li:hover.google {
+    border: 5px solid #dd4b39;
+    box-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-google {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+  
+
+
+  
+  /* media queries */
+  
+  @media screen and (max-width: 640px){
+    .wrapper {
+        width: 350px;
+    }
+    .wrapper ul li{
+        margin-top: 10px;
+    }
+    .wrapper ul li.google{
+        margin-left: 60px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 200px){
+    .wrapper {
+        width: 50px;
+    }
+    .wrapper ul li{
+        margin:15px;
+    }
+    .wrapper ul li.google{
+        margin-left: 15px;
+    }
+  }
+
+ 
